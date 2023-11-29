@@ -1,0 +1,13 @@
+@import './StyleHelpers/style-helpers';
+
+.App {
+  margin: auto;
+  height: 1024px;
+  width: 768px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $tertiary--darkest;
+  color: $white;
+}

@@ -1,0 +1,41 @@
+@import '../../StyleHelpers/style-helpers';
+
+.button {
+  z-index: 5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  background: none;
+  text-transform: uppercase;
+  line-height: rem-calc(21);
+  cursor: pointer;
+
+  &__outlined {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 75px;
+    border: 2px solid $secondary;
+    border-radius: 50px;
+    color: $primary;
+  }
+
+  &__filled {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 75px;
+    background: $secondary;
+    border: 2px solid $secondary;
+    color: $white;
+    border-radius: 50px;
+    text-shadow: -2px 1px 3px rgba(0, 0, 0, 0.45);
+    box-shadow: -3px 3px 4px $primary;
+  }
+
+  &__medium {
+    width: 230px;
+  }
+
+  &__large {
+    width: 383px;
+  }
+}

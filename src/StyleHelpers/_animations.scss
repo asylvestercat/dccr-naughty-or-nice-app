@@ -1,0 +1,201 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeInABit {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+// glitch animation
+@mixin glitchCopy {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@keyframes glitchAnim {
+  $steps: 20;
+  @for $i from 0 to $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+@keyframes glitchAnim2 {
+  $steps: 20;
+  @for $i from 0 to $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+@keyframes glitchSkew {
+  $steps: 10;
+  @for $i from 0 to $steps {
+    #{percentage($i*(1/$steps))} {
+      transform: skew((random(10) - 5) + deg);
+    }
+  }
+}
+
+// scanning animation
+// Blue hand animation
+@-webkit-keyframes handReveal {
+  0%, 100% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+}
+@keyframes handReveal {
+  0%, 100% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+}
+
+// blue drop down line animation
+@-webkit-keyframes lineReveal {
+  0% {
+    top: 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    opacity: 1
+  }
+  3% {
+    width: 100%;
+  }
+  50% {
+    top: 100%;
+  }
+  97% {
+    width: 100%;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+    width: 0;
+  }
+}
+@keyframes lineReveal {
+  0% {
+    top: 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    opacity: 1
+  }
+  3% {
+    width: 100%;
+  }
+  50% {
+    top: 100%;
+  }
+  97% {
+    width: 100%;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+    width: 0;
+  }
+}
+
+// hand blue inner lines animation
+@-webkit-keyframes handLines {
+  0%, 25%, 100% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+}
+@keyframes handLines {
+  0%, 25%, 100% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+}
+
+// hand circles animation
+@-webkit-keyframes handCircles {
+  0%, 100% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+}
+@keyframes handCircles {
+  0%, 100% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+  99% {
+    height: 0;
+  }
+}
+
+// loading bar
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes dotty {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
+}

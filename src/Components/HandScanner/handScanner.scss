@@ -1,0 +1,78 @@
+@import '../../StyleHelpers/style-helpers';
+
+.handScanner {
+  transition: 0.8s linear;
+
+  .scan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hand {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: url(../../assets/hand-blue.svg);
+    background-size: 500px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../../assets/hand-green.svg);
+      background-size: 500px;
+      overflow: hidden;
+      -webkit-animation: handReveal 8s ease-in-out;
+      -webkit-animation-fill-mode: forwards;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 8px;
+      background: $secondary--dark;
+      border-radius: 8px;
+      filter: drop-shadow(0 0 20px $secondary--dark) drop-shadow(0 0 60px $secondary--dark);
+      animation: lineReveal 8s ease-in-out;
+      animation-fill-mode: both;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .lines {
+    position: absolute;
+    inset: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 500px;
+      background: url(../../assets/lines.svg);
+      background-size: 500px;
+      animation: handLines 8s ease-in-out;
+      animation-fill-mode: both;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 500px;
+      background: url(../../assets/circles.svg);
+      background-size: 500px;
+      animation: handCircles 8s ease-in-out;
+      animation-fill-mode: both;
+    }
+  }
+}

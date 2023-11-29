@@ -1,0 +1,57 @@
+@import '../../StyleHelpers/style-helpers';
+
+.generator {
+  position: absolute;
+  z-index: 2;
+  &__placeHand {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__cta {
+      position: absolute;
+      font-weight: 600;
+      z-index: 2;
+      top: 45%;
+      left: 3%;
+      width: 445px;
+      height: 95px;
+      background-color: $secondary--dark;
+      border: $secondary--dark solid 3px;
+      border-radius: 8px;
+      filter: drop-shadow(0 0 20px $secondary--dark);
+
+      & p {
+        position: relative;
+        font-size: 42px;
+        margin: 0;
+        top: 15px;
+        animation: glitchSkew 1s infinite linear alternate-reverse;
+
+        &::before {
+          @include glitchCopy;
+          left: 2px;
+          text-shadow: -2px 0 $primary;
+          clip: rect(44px, 450px, 56px, 0);
+          animation: glitchAnim 5s infinite linear alternate-reverse;
+        }
+
+        &::after {
+          @include glitchCopy;
+          left: -2px;
+          text-shadow: -2px 0 $primary, 2px 2px $primary;
+          clip: rect(44px, 450px, 56px, 0);
+          animation: glitchAnim2 5s infinite linear alternate-reverse;
+        }
+      }
+    }
+
+    & img {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      animation: fadeInABit 4s infinite;
+    }
+  }
+}

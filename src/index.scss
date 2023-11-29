@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../src/assets/fonts/Orbitron-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../src/assets/fonts/Roboto-Light.ttf');
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
