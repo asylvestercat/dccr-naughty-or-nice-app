@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dccr-naughty-or-nice-app/static/css/main.ec3a2adb.css",
-    "main.js": "/dccr-naughty-or-nice-app/static/js/main.aedbc42b.js",
+    "main.css": "/dccr-naughty-or-nice-app/static/css/main.44b9a748.css",
+    "main.js": "/dccr-naughty-or-nice-app/static/js/main.6e56cb1e.js",
     "static/media/santa-paul.png": "/dccr-naughty-or-nice-app/static/media/santa-paul.64d79e3e679a9f2b0c88.png",
     "static/media/paul-head.png": "/dccr-naughty-or-nice-app/static/media/paul-head.c385a1b869b030f876d3.png",
     "static/media/Roboto-Light.ttf": "/dccr-naughty-or-nice-app/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
@@ -16,11 +16,11 @@
     "static/media/lines.svg": "/dccr-naughty-or-nice-app/static/media/lines.212ff07394ea4d400e00.svg",
     "static/media/train-tracks.svg": "/dccr-naughty-or-nice-app/static/media/train-tracks.1ac0c03517037aac5b483100d0cd040e.svg",
     "index.html": "/dccr-naughty-or-nice-app/index.html",
-    "main.ec3a2adb.css.map": "/dccr-naughty-or-nice-app/static/css/main.ec3a2adb.css.map",
-    "main.aedbc42b.js.map": "/dccr-naughty-or-nice-app/static/js/main.aedbc42b.js.map"
+    "main.44b9a748.css.map": "/dccr-naughty-or-nice-app/static/css/main.44b9a748.css.map",
+    "main.6e56cb1e.js.map": "/dccr-naughty-or-nice-app/static/js/main.6e56cb1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec3a2adb.css",
-    "static/js/main.aedbc42b.js"
+    "static/css/main.44b9a748.css",
+    "static/js/main.6e56cb1e.js"
   ]
 }
