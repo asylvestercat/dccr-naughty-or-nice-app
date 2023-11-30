@@ -25,7 +25,7 @@ function Intro (props) {
     </div>
     <CustomButton
       buttonType={"button__filled"}
-      handleClick={() => setDisplay("results")}
+      handleClick={() => setDisplay("generator")}
       text="Find Out Now"
     />
   </div>
