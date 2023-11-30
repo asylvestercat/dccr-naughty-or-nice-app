@@ -1,8 +1,19 @@
 import './intro.scss';
 import CustomButton from "../../Components/CustomButton";
+import paulHead from "../../assets/paul-head.png";
+import jeffHead from "../../assets/jeff-head.png";
 
-const Intro = ({setDisplay}) => (
+function Intro (props) {
+  const {
+    setDisplay
+  } = props;
+
+  return (
   <div className="intro">
+    <div className="santaHead__container">
+      <img src={jeffHead} alt="santa head" className="santaHead2"/>
+      <img src={paulHead} alt="santa head" className="santaHead1"/>
+    </div>
     <div className="heading">
       <h1>Have you been</h1>
       <div className="tagline">
@@ -18,7 +29,8 @@ const Intro = ({setDisplay}) => (
       text="Find Out Now"
     />
   </div>
-);
+  )
+};
 
 export default Intro;
 

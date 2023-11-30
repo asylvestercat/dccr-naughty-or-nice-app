@@ -3,9 +3,17 @@
 .intro {
   position: absolute;
   z-index: 2;
+  margin-top: -50px;
+
+  .santaHead__container {
+    display: flex;
+    width: 700px;
+    height: 241px;
+    justify-content: center;
+  }
 
   .heading {
-    margin-bottom: 110px;
+    margin-bottom: 80px;
 
     & h1 {
       font-family: 'Roboto', sans-serif;
@@ -19,6 +27,7 @@
     .tagline {
       display: flex;
       align-items: center;
+      justify-content: center;
 
       .keyword {
         margin-right: 20px;

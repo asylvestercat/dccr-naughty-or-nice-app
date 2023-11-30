@@ -66,7 +66,7 @@
       width: 0px;
       height: 10px;
       border-radius: 15px;
-      animation: progress 4s linear;
+      animation: progress 2500ms linear;
       animation-fill-mode: both;
     }
   }
@@ -80,7 +80,7 @@
 
   &__naughtyOrNice {
     font-size: 94px;
-    margin: 20px auto 140px;
+    margin: -50px auto 50px;
     position: relative;
     font-family: 'Orbitron', sans-serif;
     font-style: normal;
@@ -111,6 +111,15 @@
       text-shadow: -2px 0 $secondary, 2px 2px $secondary;
     }
   }
+}
+
+.santa {
+  top: 675px;
+  width: 187px;
+  position: absolute;
+  left: -366px;
+  overflow: hidden;
+  animation: slideInJiggle forwards 4s ease;
 }
 
 .trainTracks__container {
